@@ -11,7 +11,7 @@ class JuiceUpdate(BaseModel):
     name: Optional[str] = Field(None, min_length=1, example="Апельсиновый сок")
     price: Optional[PositiveFloat] = Field(None, example=120.0)
     quantity: Optional[NonNegativeInt] = Field(None, example=30)
-    supplier_id: Optional[PositiveInt] = Field(None, example=2)
+    supplier_id: Optional[PositiveInt] = Field(None, example=1)
 
 class JuiceOut(BaseModel):
     id: int

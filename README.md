@@ -83,4 +83,11 @@ poetry run aerich migrate
 poetry run aerich upgrade
 ```
 
+##### 5. Запуск FastAPI
+```
+poetry run uvicorn app.main:app --reload
+```
+Переходим в /docs и тестируем CRUD над соками.
 
+*Для работы с соками надо создать 
+хотя бы одного поставщика для FK*
