@@ -62,3 +62,25 @@ poetry add --group dev uvicorn
 ##### 2. Настройка Tortoise
 Пока что всё в файле main.py, 
 как с этим работать, пока не ясно.
+
+##### 3. Инициализация Tortoise
+```
+poetry run aerich init -t app.main.TORTOISE_ORM
+```
+Появилась папка migrations
+```
+poetry run aerich init-db
+```
+В папке migrations создалась папка models с первой миграцией
+
+##### 4. Команды с Aerich
+Создание миграций на основе моделей:
+```
+poetry run aerich migrate
+```
+Применить миграции к БД:
+```
+poetry run aerich upgrade
+```
+
+
