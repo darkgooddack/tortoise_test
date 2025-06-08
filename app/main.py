@@ -8,6 +8,7 @@ app.include_router(api_router)
 TORTOISE_ORM = {
     "connections": {
         "default": "postgres://postgres:pass1234@localhost:5432/juice",
+        # ставьте свои данные и выносите в .env
     },
     "apps": {
         "models": {
